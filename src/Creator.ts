@@ -1,4 +1,4 @@
-import { ICreator } from "./Creator.interface";
+import { ICreator } from ".";
 
 export default abstract class Creator implements ICreator {
 
