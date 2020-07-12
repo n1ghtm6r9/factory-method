@@ -1,7 +1,10 @@
-import Creator from "../../src/Creator";
-import { ITransport } from "./models";
+import { ITransport } from './models';
 
-export default abstract class Travel extends Creator {
+export interface ITravelCreator {
+    create();
+}
+
+export default abstract class Travel implements ITravelCreator {
 
     public abstract create(): ITransport;
 
